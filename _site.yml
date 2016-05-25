@@ -1,0 +1,24 @@
+name: "my-website"
+navbar:
+  title: "My Website"
+  left:
+    - text: "App"
+      href: app
+    - text: "Regions"
+      href: regions
+    - text: "Layers"
+      href: layers
+    - text: "Goals"
+      href: goals
+    - text: "Scores"
+      href: scores
+output_dir: "."
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: _includes/footer.html
+    css:
+      - "_css/font-awesome-4.6.3/css/font-awesome.min.css"
+      - "css/main.scss"
