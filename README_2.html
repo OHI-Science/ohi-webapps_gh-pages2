@@ -67,7 +67,8 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="_css/styles_app.css" type="text/css" />
+<link rel="stylesheet" href="_css/font-awesome-4.6.3/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="_sass/main.css" type="text/css" />
 
 </head>
 
@@ -208,9 +209,38 @@ $(document).ready(function () {
 </div>
 
 
-<iframe frameborder="0" width="100%" height="850" src="http://ohi-science.nceas.ucsb.edu/ohi-shiny2">
-</iframe>
-<p>For details on how to use this App, see <a href="../docs/#toc2">App documentation</a>.</p>
+<div id="ocean-health-index-for-baltic-bhi" class="section level1">
+<h1>Ocean Health Index for Baltic [bhi]</h1>
+<p>Build status of branches:</p>
+<ul>
+<li><a href="https://github.com/OHI-Science/bhi/tree/draft"><strong>draft</strong></a></li>
+</ul>
+<p><a href="https://travis-ci.org/OHI-Science/bhi/branches"><img src="https://api.travis-ci.org/OHI-Science/bhi.svg?branch=draft" /></a></p>
+<ul>
+<li><a href="https://github.com/OHI-Science/bhi/tree/published"><strong>published</strong></a></li>
+</ul>
+<p>not applicable (since merely a copy of a passing draft branch)</p>
+<ul>
+<li><a href="https://github.com/OHI-Science/bhi/tree/gh-pages"><strong>gh-pages</strong></a></li>
+</ul>
+<p><a href="https://travis-ci.org/OHI-Science/bhi/branches"><img src="https://api.travis-ci.org/OHI-Science/bhi.svg?branch=gh-pages" /></a></p>
+<p>Note that a “build failing” for this gh-pages branch (ie the website) could simply mean a broken link was found.</p>
+<ul>
+<li><a href="https://github.com/OHI-Science/bhi/tree/app"><strong>gh-pages</strong></a></li>
+</ul>
+<p>not applicable (because deployment of the Shiny app is done by OHI-Science internally)</p>
+<p>For more details, see below and <a href="http://ohi-science.org/bhi/docs" class="uri">http://ohi-science.org/bhi/docs</a>.</p>
+<div id="gh-pages-website" class="section level2">
+<h2>gh-pages: website</h2>
+<p>A “build failing” for the gh-pages branch could simply mean broken links were found.</p>
+<p>To test the website locally, install <a href="http://jekyllrb.com/docs/installation/">jekyll</a> and run:</p>
+<pre class="bash"><code>jekyll serve --baseurl &#39;&#39;</code></pre>
+<p>To test links, install html-proofer (<code>sudo gem install html-proofer</code>) and run:</p>
+<pre class="bash"><code>jekyll serve --baseurl &#39;&#39;
+# Ctrl-C to stop
+htmlproof ./_site</code></pre>
+</div>
+</div>
 
 <footer role="contentinfo" id="site-footer">
 	<nav role="navigation" class="menu bottom-menu">

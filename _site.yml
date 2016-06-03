@@ -1,17 +1,17 @@
 name: "my-website"
 navbar:
-  title: "My Website"
+  title: "OHI Global"
   left:
     - text: "App"
-      href: app
+      href: app.html
     - text: "Regions"
-      href: regions
+      href: regions.html
     - text: "Layers"
-      href: layers
+      href: layers.html
     - text: "Goals"
-      href: goals
+      href: goals.html
     - text: "Scores"
-      href: scores
+      href: scores.html
 output_dir: "."
 output:
   html_document:
@@ -21,4 +21,5 @@ output:
       after_body: _includes/footer.html
     css:
       - "_css/font-awesome-4.6.3/css/font-awesome.min.css"
-      - "css/main.scss"
+      - "_sass/main.css" #- "css/main.scss"
+

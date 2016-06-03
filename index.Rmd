@@ -1,8 +1,9 @@
 ---
-title: "Index"
-params:
-  study_area: Baltic
 ---
+
+```{r, echo=F}
+source("./_site.R")
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -10,8 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <div class="page-lead" style="background-image:url(images/regions_1600x800.png)">
 <div class="wrap page-lead-content">
-<h1>OHI<i class="fa fa-search-plus"></i> `r params$study_area` Starter Kit</h1>
-<h2>Jump start Ocean Health Index for `r params$study_area` with these materials.</h2>
+<h1>OHI<i class="fa fa-search-plus"></i> `r study_area` Starter Kit</h1>
+<h2>Jump start Ocean Health Index for `r study_area` with these materials.</h2>
 <a href="/app/" class="btn-inverse">Launch App</a> &nbsp; or &nbsp; <a href="/docs/" class="btn-inverse">Read Docs</a>
 </div><!-- /.page-lead-content -->
 </div><!-- /.page-lead -->
