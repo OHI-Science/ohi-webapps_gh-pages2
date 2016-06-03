@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -151,7 +151,7 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.0/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -173,11 +173,14 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">OHI Global</a>
+      <a class="navbar-brand" href="index.html">BHI</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a href="about.html">About</a>
+</li>
+<li>
   <a href="app.html">App</a>
 </li>
 <li>
@@ -185,12 +188,6 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="layers.html">Layers</a>
-</li>
-<li>
-  <a href="goals.html">Goals</a>
-</li>
-<li>
-  <a href="scores.html">Scores</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -213,23 +210,11 @@ $(document).ready(function () {
 <p>For details on how to use this App, see <a href="../docs/#toc2">App documentation</a>.</p>
 
 <footer role="contentinfo" id="site-footer">
-	<nav role="navigation" class="menu bottom-menu">
-		<ul class="menu-item">
-		{% for link in site.data.footer %}
-      {% if link.url contains 'http' %}
-        {% assign domain = '' %}
-        {% else %}
-        {% assign domain = site.baseurl %}
-      {% endif %}
-			<li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		{% endfor %}
-		</ul>
-	</nav><!-- /.bottom-menu -->
-	<p class="copyright">&#169; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}">{{ site.title }}</a>,
-		created by <a href="http://github.com/bbest">Ben Best</a>,
-		powered by <a href="http://www.r-project.org">R</a> + <a href="http://shiny.rstudio.com">Shiny</a> +
-							 <a href="http://github.com">Github</a> + <a href="http://travis-ci.org">Travis CI</a> +
-							 <a href="http://jekyllrb.com">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/">Skinny Bones</a>.</p>
+<!-- /.bottom-menu -->
+	<p class="copyright">&#169; 2016,
+		created by <a href="http://github.com/bbest">Ben Best</a> and <a href="http://github.com/jules32">Julie Lowndes</a>,
+		powered by <a href="http://www.r-project.org">R</a> + <a href="http://rmarkdown.rstudio.com">RMarkdown</a> +
+	             <a href="http://shiny.rstudio.com">Shiny</a> + <a href="http://github.com">Github</a>.</p>
 </footer>
 
 
