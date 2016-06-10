@@ -1,13 +1,13 @@
 ---
-output:
-  html_document:
-    css:
-      - "./_css/styles_app.css"
 ---
 
 ```{r, echo=F}
 source("./_site.R")
 ```
+
+<div class="col-sm-6">
+![](images/baltic-eye.jpg){width=350 height=350 style="margin-top:27px;"}
+</div>
 
 The Baltic Health Index formally started in 2015 and will run until late 2016. A trans-disciplinary project, it involves researchers from around the Baltic Sea who consult on the  development of a region-specific Index based on a comprehensive assessment of existing data.
 
